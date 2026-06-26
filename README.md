@@ -1,4 +1,4 @@
-# 🧠 DocMind — Production-Ready RAG Application
+# 🧠 SmartRAG-Document-Intelligence
 
 A full-stack Retrieval Augmented Generation (RAG) app that lets you upload documents and chat with them using Groq's LLaMA 3.
 
