@@ -1,0 +1,78 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# Virtual Environment
+# =========================
+venv/
+env/
+ENV/
+
+# =========================
+# Environment variables (IMPORTANT)
+# =========================
+.env
+
+# =========================
+# Streamlit cache
+# =========================
+.streamlit/
+.cache/
+
+# =========================
+# ChromaDB / Vector DB (VERY IMPORTANT)
+# DO NOT PUSH embeddings DB
+# =========================
+data/chroma_db/
+**/chroma_db/
+chromadb/
+
+# =========================
+# Uploads (user files)
+# =========================
+uploads/
+data/uploads/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Jupyter notebooks cache
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# HuggingFace / Torch cache
+# =========================
+.cache/
+huggingface/
+torch/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# Pytest
+# =========================
+.pytest_cache/
+
+# =========================
+# Misc
+# =========================
+*.sqlite3
+*.db
