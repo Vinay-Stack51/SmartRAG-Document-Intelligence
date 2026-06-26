@@ -12,18 +12,24 @@ from backend.llm import get_llm
 from backend.vector_store import get_retriever
 
 # RAG system prompt — instructs the LLM to stay grounded in retrieved context
-RAG_PROMPT_TEMPLATE = """You are a helpful AI assistant. Answer the user's question based ONLY on the provided context from their uploaded documents.
+RAG_PROMPT_TEMPLATE = """You are an intelligent AI assistant.
 
-If the answer is not found in the context, say: "I couldn't find relevant information in the uploaded documents to answer this question."
+Answer the user's question using ONLY the provided context from the uploaded documents.
 
-Do not use your general knowledge — only the provided context.
+Explain the answer in your own words instead of copying sentences directly from the context. Summarize and simplify the information while preserving its meaning.
+
+If the answer is not present in the context, reply:
+"I couldn't find relevant information in the uploaded documents to answer this question."
+
+Do not add information that is not supported by the provided context.
 
 Context:
 {context}
 
-Question: {question}
+Question:
+{question}
 
-Answer:"""
+Helpful Answer:"""
 
 
 def format_docs(docs: List[Document]) -> str:
