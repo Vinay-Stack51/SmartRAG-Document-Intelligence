@@ -30,7 +30,7 @@ AI_RAG_APP/
 │   └── rag_pipeline.py     # Core RAG chain
 ├── frontend/
 │   ├── app.py              # Main Streamlit app
-│   └── pages/
+│   └── _pages/
 │       ├── upload.py       # Upload UI
 │       └── chat.py         # Chat UI
 ├── data/
@@ -50,6 +50,7 @@ AI_RAG_APP/
 Sign up at [https://console.groq.com](https://console.groq.com) — it's free.
 
 ### 2. Clone / download this project
+git clone 
 
 ### 3. Create a virtual environment
 ```bash
