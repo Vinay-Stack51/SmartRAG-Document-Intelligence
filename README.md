@@ -50,7 +50,7 @@ AI_RAG_APP/
 Sign up at [https://console.groq.com](https://console.groq.com) — it's free.
 
 ### 2. Clone / download this project
-git clone 
+git clone https://github.com/Vinay-Stack51/SmartRAG-Document-Intelligence.git
 
 ### 3. Create a virtual environment
 ```bash
@@ -78,8 +78,6 @@ Or directly:
 ```bash
 streamlit run frontend/app.py
 ```
-
-Open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ---
 
